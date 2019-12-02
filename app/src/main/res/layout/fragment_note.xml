@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteFragment">
+    <TextView
+        android:id="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@color/colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/bigTaskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/date">
+        <TextView
+            android:id="@+id/taskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/taskTitle"
+
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"/>
+        <View
+            android:layout_width="370dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="4dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:id="@+id/taskRecycleViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/taskRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="4dp"
+
+                android:background="@color/cardview_light_background"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/addTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/plusbutton"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="@string/addTaskLabel"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bigHmwrContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/date">
+
+        <TextView
+            android:id="@+id/hmwkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/hmwrkTitle"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"/>
+        <View
+            android:layout_width="370dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="4dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:id="@+id/hmwrkRecycleViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hmwrkRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/cardview_light_background"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addHmwrkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:src="@drawable/plusbutton"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="@string/addHmwrkLabel"
+                android:textStyle="bold"
+                android:layout_marginTop="5.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

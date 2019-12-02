@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project Final</string>
+    <string name="Today">Aujourd Hui</string>
+    <string name="addHmwrk">Determiner Tache</string>
+    <string name="addHmwrkLabel">Ajouter Devoir</string>
+    <string name="addTask">Determiner Tache</string>
+    <string name="addTaskLabel">Ajouter Tache</string>
+    <string name="calendarLabel">Calendrier</string>
+    <string name="calendarTitle">Calendrier</string>
+    <string name="change_language">Choisir un Langage</string>
+    <string name="dp_drop">DROP TABLE IF EXISTS</string>
+    <string name="english">Anglais</string>
+    <string name="french">Francais</string>
+    <string name="hello_blank_fragment">Heeloo</string>
+    <string name="hmwrkTitle">Devoir</string>
+    <string name="labelClass">Classe</string>
+    <string name="labelDescription">Description</string>
+    <string name="labelName">Nom</string>
+    <string name="labelReminder">S</string>
+    <string name="labelTime">Heure</string>
+    <string name="nav_settings">Reglages</string>
+    <string name="navigation_drawer_close">Open Navigation Close</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="save">Sauvegarder</string>
+    <string name="taskTitle">Taches</string>
+</resources>
